@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid red;
+    position: relative;
+}
+
+table input {
+    width: 228px;
+    height: 20px;
+}
+
+.container table {
+    height: 350px;
+}
+
+
+/* tab选项卡 */
+
+#my-tabs {
+    width: 60%;
+    height: 400px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: 1px solid green;
+}
+
+.tabs li {
+    float: left;
+    list-style: none;
+    border: 1px solid #000;
+}
+
+.tabs li a {
+    display: inline-block;
+    padding: 6px 16px;
+    ;
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.content-box div.wrapper {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border-top: 0;
+    position: absolute;
+    /* top: 27px; */
+    left: 0;
+}
+
+.wrapper div {
+    margin-bottom: 15px;
+}
+
+.content-box div p {
+    margin-bottom: 9px;
+}
+
+.content-box div span {
+    padding: 2px 14px;
+    border: 1px solid #000;
+    margin-right: 5px;
+}
+
+.content-box>.active {
+    z-index: 10;
+}
+
+.selected_label {
+    width: 367px;
+    /* height: 20px; */
+    /* border: 1px solid black; */
+    padding: 5px;
+    overflow: hidden;
+}
+
+.selected_label span {
+    border: 1px solid #000;
+    padding: 2px;
+    margin: 2px;
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.title_selected {
+    background: #bc47fa;
+    color: #fff;
+    border-color: #3385ff;
+}
+
+.white_color {
+    color: #fff;
+}
+
+.span_selected {
+    background: #3385ff;
+    color: #fff;
+    border-color: #3385ff;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+button.confirm_label {
+    width: 120px;
+    height: 30px;
+    margin-right: 10px;
+}

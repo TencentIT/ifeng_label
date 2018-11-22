@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>表格动态加载数据</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery-1.9.1.min.js"></script>
+</head>
+
+<body>
+    <div id="data_tab">
+        <table cellspacing=0 border=1 align="center" width="1000px">
+            <tr>
+                <td id="td1">
+                    <!-- 接口1数据title :<span></span> -->
+                </td>
+                <td rowspan="4" style="height:400px;width: 500px;">
+                    <div id="my-tabs">
+                        <ul class="tabs clearfix">
+                            <li class="active"><a data-toggle="tab" href="#content1">凤凰网1</a></li>
+                            <li><a data-toggle="tab" href="#content2">凤凰网2</a></li>
+                            <li><a data-toggle="tab" href="#content3">凤凰网3</a></li>
+                        </ul>
+                        <div class="container">
+                            <div id="content1" class="active">
+                                <span>标签1</span><span>标签2</span><span>标签3</span><span>标签4</span>
+                            </div>
+                            <div id="content2">
+                                <span>标签5</span><span>标签6</span><span>标签7</span><span>标签8</span>
+                            </div>
+                            <div id="content3">
+                                <span>标签9</span><span>标签10</span><span>标签11</span><span>标签12</span>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td id="td2">
+
+                </td>
+            </tr>
+            <tr>
+                <td id="td3">
+
+                </td>
+            </tr>
+            <tr>
+                <td id="td4">
+
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" id="selected_label">
+                    选中的标签：
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button>跳过</button>
+                    <button>确定</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+<script src="js/index.js"></script>
+
+
+</html>
