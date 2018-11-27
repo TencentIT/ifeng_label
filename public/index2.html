@@ -17,37 +17,37 @@
             <tr>
                 <td>编号:</td>
                 <td>
-                    <input type="text" class="number" value="001" />
+                    <input type="text" class="number" value="001" name="number" />
                 </td>
             </tr>
             <tr>
                 <td>当前标签:</td>
                 <td>
-                    <input type="text" class="current_label" />
+                    <input type="text" class="input_label" name="input_label" />
                 </td>
             </tr>
             <tr>
                 <td> 标题:</td>
                 <td>
-                    <input type="text" class="title" value="001" />
+                    <input type="text" class="title" value="001" name="title" />
                 </td>
             </tr>
             <tr>
                 <td>全文:</td>
                 <td>
-                    <textarea rows="5" cols="30" class="textarea">001</textarea>
+                    <textarea rows="5" cols="30" class="textarea" name="textarea">001</textarea>
                 </td>
             </tr>
             <tr>
                 <td>视频链接:</td>
                 <td>
-                    <input type="text" class="video_link" value="001" />
+                    <input type="text" class="video_link" value="001" name="video_link" />
                 </td>
             </tr>
             <tr>
                 <td>搜索:</td>
                 <td>
-                    <input type="text" class="search" value="001" />
+                    <input type="text" class="search" value="001" name="search" />
                 </td>
             </tr>
             <tr>
@@ -59,7 +59,7 @@
             <tr>
                 <td></td>
                 <td>
-                    <button onclick="next()">跳过</button><button onclick="submit()">确定</button>
+                    <a onclick="next()" class="button medium regular green">跳过</a><a  class="button medium regular red" onclick="submit()">确定</a>
                 </td>
             </tr>
         </table>
@@ -68,92 +68,201 @@
         <!-- tab选项卡 -->
         <div id="my-tabs">
             <ul class="tabs clearfix">
-                <li class="title_selected"><a data-toggle="tab" class="white_color" href="#content1">军事</a></li>
-                <li><a data-toggle="tab" href="#content2">娱乐</a></li>
-                <li><a data-toggle="tab" href="#content3">社会</a></li>
+                <li class="title_selected"><a data-toggle="tab" class="white_color" href="#content1">娱乐</a></li>
+                <li><a data-toggle="tab" href="#content2">综艺</a></li>
+                <li><a data-toggle="tab" href="#content3">电视剧</a></li>
+                <li><a data-toggle="tab" href="#content4">社会</a></li>
+                <li><a data-toggle="tab" href="#content5">时事</a></li>
+                <li><a data-toggle="tab" href="#content6">军事</a></li>
+                <li><a data-toggle="tab" href="#content7">影视</a></li>
+                <li><a data-toggle="tab" href="#content8">科技</a></li>
+
+                <li><a data-toggle="tab" href="#content9">时尚</a></li>
+                <li><a data-toggle="tab" href="#content10">游戏</a></li>
+                <li><a data-toggle="tab" href="#content11">体育</a></li>
+                
+                <li><a data-toggle="tab" href="#content12">财经</a></li>
+                <li><a data-toggle="tab" href="#content13">旅游</a></li>
+                <li><a data-toggle="tab" href="#content14">汽车</a></li>
             </ul>
             <div class="content-box">
                 <div id="content1" class="wrapper active">
                     <div>
-                        <p>中国军情新闻</p>
-                        <span>台海军情1</span><span>台海军情2</span><span>台海军情3</span>
-                        <span>台海军情4</span><span>台海军情5</span>
-                    </div>
-                    <div>
-                        <p>中国军情新闻</p>
-                        <span>台海军情6</span><span>台海军情7</span><span>台海军情8</span>
-                        <span>台海军情9</span><span>台海军情10</span>
-                    </div>
-                    <div>
-                        <p>中国军情新闻</p>
-                        <span>台海军情11</span><span>台海军情12</span><span>台海军情13</span>
-                        <span>台海军情14</span><span>台海军情15</span>
-                    </div>
-                    <div>
-                        <p>中国军情新闻</p>
-                        <span>台海军情16</span><span>台海军情17</span><span>台海军情18</span>
-                        <span>台海军情19</span><span>台海军情20</span>
-                    </div>
-                    <div>
-                        <p>中国军情新闻</p>
-                        <span>台海军情21</span><span>台海军情22</span><span>台海军情23</span>
-                        <span>台海军情34</span><span>台海军情25</span>
+                        <span>港澳娱乐</span><span>台湾娱乐</span><span>大陆娱乐</span>
+                        <span>美国娱乐</span><span>韩国娱乐韩国娱乐</span>
+                        <span>日本娱乐</span><span>东南亚娱乐</span>
+                        <span>其他海外娱乐</span>
                     </div>
                 </div>
 
                 <div id="content2" class="wrapper">
                     <div>
-                        <p>中国军情新闻2</p>
-                        <span>台海军情21</span><span>台海军情22</span><span>台海军情23</span>
-                        <span>台海军情24</span><span>台海军情25</span>
+                      
+                        <span>真人秀类栏目</span><span>舞蹈类栏目</span><span>生活类栏目</span>
+                       
+
+                        <span>时尚类栏目</span><span>游戏类栏目</span><span>少儿类栏目</span>
+                        <span>选秀类栏目</span><span>脱口秀栏目</span>
+                        <span>访谈类栏目</span><span>情感相亲类栏目</span>
+
+                      
+                        
+                        <span>音乐类栏目</span><span>体育类栏目</span>
+
+                        <span>美食类栏目</span><span>竞技类栏目</span><span>求职类栏目</span>
+                      
+
+                         <span>户外类栏目</span><span>生存类栏目</span>  <span>法制类栏目</span><span>情感相亲类栏目</span><span>晚会类栏目：电影节颁奖等</span>
+                        <span>军事类栏目</span><span>古玩字画类栏目</span>
+
+                       <span>喜剧类栏目</span> 
+
+                         <span>晚会类栏目</span> 
+                        <span>纪实类栏目</span> 
+                        <span>科教类栏目</span>
+                         <span>文化类栏目</span> 
+                         <span>其他类栏目</span> 
                     </div>
-                    <div>
-                        <p>中国军情2新闻2</p>
-                        <span>台海军情26</span><span>台海军情27</span><span>台海军情28</span>
-                        <span>台海军情29</span><span>台海军情210</span>
-                    </div>
-                    <div>
-                        <p>中国军情2新闻</p>
-                        <span>台海军情211</span><span>台海军情212</span><span>台海军情213</span>
-                        <span>台海军情214</span><span>台海军情215</span>
-                    </div>
-                    <div>
-                        <p>中国军情2新闻</p>
-                        <span>台海军情216</span><span>台海军情217</span><span>台海军情218</span>
-                        <span>台海军情219</span><span>台海军情220</span>
-                    </div>
-                    <div>
-                        <p>中国军情2新闻</p>
-                        <span>台海军情221</span><span>台海军情224</span><span>台海军情225</span>
-                        <span>台海军情222</span><span>台海军情223</span>
-                    </div>
+
                 </div>
                 <div id="content3" class="wrapper">
-                    <div>
-                        <p>中国军情新闻3</p>
-                        <span>台海军情31</span><span>台海军情32</span><span>台海军情33</span>
-                        <span>台海军情34</span><span>台海军情35</span>
-                    </div>
-                    <div>
-                        <p>中国军情3新闻</p>
-                        <span>台海军情36</span><span>台海军情36</span><span>台海军情38</span>
-                        <span>台海军情39</span><span>台海军情310</span>
-                    </div>
-                    <div>
-                        <p>中国军情3新闻</p>
-                        <span>台海军情311</span><span>台海军情312</span><span>台海军情313</span>
-                        <span>台海军情314</span><span>台海军情315</span>
-                    </div>
-                    <div>
-                        <p>中国军情3新闻</p>
-                        <span>台海军情316</span><span>台海军情317</span><span>台海军情318</span>
-                        <span>台海军情319</span><span>台海军情320</span>
-                    </div>
-                    <div>
-                        <p>中国军情3新闻</p>
-                        <span>台海军情321</span><span>台海军情322</span><span>台海军情323</span>
-                        <span>台海军情324</span><span>台海军情325</span>
-                    </div>
+                   
+                        <span>电视剧国外剧</span><span>电视剧国产剧</span> 
+                        <span>农村</span><span>武侠</span> 
+                        <p>都市</p><span>偶像</span><span>言情</span><span>都市</span>
+
+                        <p>古装</p><span>穿越</span><span>宫廷</span><span>古装</span>
+                        <p>战争</p><span>战争</span><span>罪案</span><span>抗日</span><span>军旅</span>
+                </div>
+
+                <div id="content4" class="wrapper">
+                        <span>社会新闻</span><span>医学常识</span><span>车祸视频</span>
+                        <span>事故救援</span><span>案件侦破</span>
+                        <span>名人新闻</span><span>旅游资讯</span><span>工程建设</span>
+                        <span>感恩公益</span><span>感恩公益</span>
+                        <span>监控视频</span><span>意外事件</span><span>生活常识</span>
+                        <span>生活小窍门</span><span>手工制作</span>
+                        <span>安全常识</span><span>职场</span>
+
+                       
+                        <span>社会民生</span> 
+                        <span>社会诈骗</span>
+                        
+                        <span>怪异事件</span>
+                       
+                        <span>婚姻爱情</span> 
+                </div>
+                <div id="content5" class="wrapper">
+                        <span>社会新闻</span><span>时政新闻</span><span>大陆</span>
+                        <span>台湾</span><span>港澳</span>
+                        <span>国际新闻</span><span>财经新闻</span><span>军事新闻</span>
+                        <span>体育新闻</span><span>科技新闻</span>
+                </div>
+
+                <div id="content6" class="wrapper">
+                  <span>中国军情新闻</span><span>台海军情</span>
+                  <span>南海军情</span><span>钓鱼岛军情</span><span>大陆军情</span>
+                  <span>其他军情</span><span>国际军情新闻</span>
+                  <span>美国军情</span><span>俄罗斯军情</span><span>中东军情</span>
+
+                  <span>东南亚军情</span><span>南亚军情</span>
+                  <span>北非军情</span><span>欧洲军情</span><span>其他新闻</span>
+                  <span>军事武器装备</span><span>海军武器装备</span>
+                  <span>陆军武器装备</span><span>空军武器装备</span><span>军事评论</span>
+
+                  <span>军事专家评论</span><span>军事杂谈</span>
+                  <span>军事历史故事</span><span>军事历史故事</span><span>军事故事</span>
+              
+                 
+                  <span>国际军事活动</span>
+                </div>
+
+                <div id="content7" class="wrapper">
+
+                        <span>原生片段</span><span>原生配音</span>
+ 
+                          <span>影视剧解说</span> 
+ 
+                          <span>电影周边</span> 
+                   
+                </div>
+                <div id="content8" class="wrapper">
+                    <span>科技前沿</span> <span>科技资讯</span><span>人工智能资讯</span><span>展会论坛资讯</span>
+                    <span>互联网资讯</span> <span>智能家居资讯</span><span>通信业资讯</span>
+
+                    <span>数码产品资讯</span> <span>手机资讯</span><span>平板电脑资讯</span><span>电脑笔记本资讯</span>
+                    <span>耳机资讯</span> <span>数码相机资讯</span><span>游戏主机资讯</span>
+
+                    <span>无人机资讯</span><span>数码新品发布会</span>
+
+                       
+                        <span>机械制造资讯</span> 
+                        
+                 
+                        <span>生命科学资讯</span> 
+                     
+                        
+                        <span>最新的科学发现</span> 
+                   
+                         
+                        <span>科普知识</span>
+
+                       
+                        <span>科技周边</span> 
+ 
+                        <span>智能穿戴资讯</span> 
+                   
+                </div>
+                <div id="content9" class="wrapper">
+                    <span>护肤</span><span>美妆</span> <span>化妆品</span><span>美发</span>
+                    <span>美甲</span><span>穿搭时尚</span> <span>首饰品</span><span>时尚专访</span>
+                    <p>时尚健身</p>
+                    <span>瘦身</span>
+                </div>
+                <div id="content10" class="wrapper">
+                    <span>热门网游</span><span>热门手游</span> <span>单机热游</span><span>体育游戏</span>
+                    <span>棋牌游戏</span><span>电竞赛事</span> <span>游戏攻略</span><span>游戏精彩集锦</span>
+                    <span>游戏知名主播</span><span>游戏周边</span>
+                </div>
+                <div id="content11" class="wrapper">
+                    <span>体育赛事</span><span>足球</span> <span>篮球</span><span>网球</span>
+                    <span>羽毛球</span><span>乒乓球</span> <span>乒乓球</span><span>棒球</span>
+                    <span>曲棍球</span><span>橄榄球</span>
+
+                    <span>手球</span><span>游泳</span> <span>跳水</span><span>田径</span>
+                    <span>攀岩</span><span>台球</span> <span>搏击</span><span>保龄球</span>
+                    <span>拳击</span><span>高尔夫</span>
+
+                    <span>跑步</span><span>冰雪项目</span> <span>体操</span><span>马术</span>
+                    <span>赛马</span><span>击剑</span> <span>水球</span><span>极限运动</span>
+                    <span>武术</span>
+
+                    
+                    <span>赛车</span> 
+                </div>
+                <div id="content12" class="wrapper">
+                    <span>财经新闻</span><span>金融证券新闻</span> <span>消费理财新闻</span><span>财经人物新闻</span>
+                    <span>财经行业新闻</span><span>房产新闻</span> <span>财经周边</span>
+                    
+                    
+                    <span>财经知识</span> 
+                </div>
+                <div id="content13" class="wrapper">
+                    <span>旅游方式</span><span>自驾游旅游</span> <span>旅行团旅游</span><span>骑行旅游</span>
+                    <span>徒步旅游</span><span>旅游热门目的地</span> <span>国内旅游地点</span><span>国外旅游</span>
+                    <span>海岛旅游</span>
+
+                    <span>雪山旅游</span><span>文化旅游</span> <span>沙漠旅游</span><span>森林旅游</span>
+                    <span>旅游攻略</span><span>旅行航拍</span> <span>旅游轶事</span>
+
+                </div>
+                <div id="content14" class="wrapper">
+
+                    <span>汽车品牌</span><span>汽车改装</span> <span>汽车车展</span><span>汽车部件</span>
+                    <span>汽车测评</span><span>摩托车</span> <span>汽车周边</span>
+
+                    <p>汽车服务</p>
+                    <span>护理</span><span>保养</span><span>试驾</span><span>售后售前服务</span>
                 </div>
             </div>
         </div>
